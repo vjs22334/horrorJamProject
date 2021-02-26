@@ -30,9 +30,12 @@ public class SoundOrigin : MonoBehaviour
             Vector2 Direction = DetectorTransform.position - SrcTransform.position;                                         //and all the sound detectors (Enemies for now)
             RaycastHit2D[] hits;
             hits = Physics2D.RaycastAll(SrcTransform.position, Direction, distanceToObject, Walls);
-            float BarrierCount = hits.Length;
+            foreach(RaycastHit2D Barrier in hits) {
+                BarrierScript bs = Barrier.transform.gameObject.GetComponent<BarrierScript>();
+                currPower -= bs.GetPenalizer();
+            }
 
-            float lossPower = BarrierCount * BarrierPenalizers + distanceToObject * DistancePenalizer;                      //Substracts the penalizers from the ray power
+            float lossPower = distanceToObject * DistancePenalizer;                                                         //Substracts the penalizers from the ray power
             currPower -= lossPower;
             if(distanceToObject <= SoundPower / 25) {
                 currPower += 999999999;
@@ -40,8 +43,7 @@ public class SoundOrigin : MonoBehaviour
             SoundReceive  sr = Detector.GetComponent<SoundReceive>();                                                       //The detector receives the SoundRay
             sr.ReceiveSound(currPower);
 
-            Debug.Log(currPower);
-            Debug.Log(BarrierCount);                                                                                        //Debug
+            Debug.Log(currPower);                                                                                   //Debug
             Debug.DrawRay(SrcTransform.position, Direction, Color.green, 3f);
         }
 
