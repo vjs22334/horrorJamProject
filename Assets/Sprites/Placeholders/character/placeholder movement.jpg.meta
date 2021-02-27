@@ -1,0 +1,1640 @@
+fileFormatVersion: 2
+guid: 24f9faf584f6ecd49a7cc429963efcd6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6098345012941127615
+    second: placeholder movement_0
+  - first:
+      213: 4503349806320558593
+    second: placeholder movement_1
+  - first:
+      213: -3988173315852989496
+    second: placeholder movement_2
+  - first:
+      213: 1640595915076500191
+    second: placeholder movement_3
+  - first:
+      213: 1247596600840719898
+    second: placeholder movement_4
+  - first:
+      213: 6354424193880671369
+    second: placeholder movement_5
+  - first:
+      213: 1115089869192484301
+    second: placeholder movement_6
+  - first:
+      213: 5066272385136580551
+    second: placeholder movement_7
+  - first:
+      213: 6122444350853072104
+    second: placeholder movement_8
+  - first:
+      213: 6745885877692129761
+    second: placeholder movement_9
+  - first:
+      213: -6931853775168360704
+    second: placeholder movement_10
+  - first:
+      213: 159916671977075779
+    second: placeholder movement_11
+  - first:
+      213: 9168083874491496757
+    second: placeholder movement_12
+  - first:
+      213: -5829242193875733520
+    second: placeholder movement_13
+  - first:
+      213: -4193569861237518732
+    second: placeholder movement_14
+  - first:
+      213: 3075339942376961130
+    second: placeholder movement_15
+  - first:
+      213: -61634626167346294
+    second: placeholder movement_16
+  - first:
+      213: 4688876383948777040
+    second: placeholder movement_17
+  - first:
+      213: -6456751326087245630
+    second: placeholder movement_18
+  - first:
+      213: -7898158900708056704
+    second: placeholder movement_19
+  - first:
+      213: 3360100244270617960
+    second: placeholder movement_20
+  - first:
+      213: 6417354614561829898
+    second: placeholder movement_21
+  - first:
+      213: -121599567473333562
+    second: placeholder movement_22
+  - first:
+      213: -7681021583096735685
+    second: placeholder movement_23
+  - first:
+      213: -1929897282763029873
+    second: placeholder movement_24
+  - first:
+      213: 3824559788215005470
+    second: placeholder movement_25
+  - first:
+      213: 3979259681858826146
+    second: placeholder movement_26
+  - first:
+      213: -2386653179977282323
+    second: placeholder movement_27
+  - first:
+      213: 5293715774795759869
+    second: placeholder movement_28
+  - first:
+      213: 6247458236082571672
+    second: placeholder movement_29
+  - first:
+      213: 7423878335399894313
+    second: placeholder movement_30
+  - first:
+      213: 6667272572174713112
+    second: placeholder movement_31
+  - first:
+      213: 7325988713375101160
+    second: placeholder movement_32
+  - first:
+      213: -3046543258459719259
+    second: placeholder movement_33
+  - first:
+      213: 9217800915765600199
+    second: placeholder movement_34
+  - first:
+      213: -327589374436699058
+    second: placeholder movement_35
+  - first:
+      213: 327696951354534163
+    second: placeholder movement_36
+  - first:
+      213: -6388098263741450938
+    second: placeholder movement_37
+  - first:
+      213: 8633981973032372297
+    second: placeholder movement_38
+  - first:
+      213: 8630062543599829295
+    second: placeholder movement_39
+  - first:
+      213: -6659342602620497455
+    second: placeholder movement_40
+  - first:
+      213: 4266871853364314554
+    second: placeholder movement_41
+  - first:
+      213: 3778588913343810089
+    second: placeholder movement_42
+  - first:
+      213: 7702654636907766010
+    second: placeholder movement_43
+  - first:
+      213: 5162290962345278654
+    second: placeholder movement_44
+  - first:
+      213: 7712764326458795608
+    second: placeholder movement_45
+  - first:
+      213: 3219441295552351977
+    second: placeholder movement_46
+  - first:
+      213: -8851691544420794981
+    second: placeholder movement_47
+  - first:
+      213: -7463891643644855601
+    second: placeholder movement_48
+  - first:
+      213: 1095131460373155067
+    second: placeholder movement_49
+  - first:
+      213: -1749183462955831370
+    second: placeholder movement_50
+  - first:
+      213: -2901049736920948760
+    second: placeholder movement_51
+  - first:
+      213: 4965941693629338612
+    second: placeholder movement_52
+  - first:
+      213: 7586667759502093163
+    second: placeholder movement_53
+  - first:
+      213: 2596501098824228468
+    second: placeholder movement_54
+  - first:
+      213: 964681651076278556
+    second: placeholder movement_55
+  - first:
+      213: -1138075082072062873
+    second: placeholder movement_56
+  - first:
+      213: -3314243556663910457
+    second: placeholder movement_57
+  - first:
+      213: -788215441410819673
+    second: placeholder movement_58
+  - first:
+      213: 9109622870204237101
+    second: placeholder movement_59
+  - first:
+      213: 598840584448069033
+    second: placeholder movement_60
+  - first:
+      213: 8154910582412352113
+    second: placeholder movement_61
+  - first:
+      213: 2625020413630515378
+    second: placeholder movement_62
+  - first:
+      213: -6177032841662881456
+    second: placeholder movement_63
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: placeholder movement_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 709
+        width: 37
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf71269a7ca1a450800000000000000
+      internalID: 6098345012941127615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 702
+        width: 35
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102af010acc1f7e30800000000000000
+      internalID: 4503349806320558593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_2
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 700
+        width: 33
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb04eddf7927a8c0800000000000000
+      internalID: -3988173315852989496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_3
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 703
+        width: 35
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda7712ea4194c610800000000000000
+      internalID: 1640595915076500191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_4
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 707
+        width: 37
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e88189f7a505110800000000000000
+      internalID: 1247596600840719898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_5
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 703
+        width: 35
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984c76c13237f2850800000000000000
+      internalID: 6354424193880671369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_6
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 701
+        width: 34
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5dad9f358997f00800000000000000
+      internalID: 1115089869192484301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_7
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 704
+        width: 35
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7df6b54e30f4640800000000000000
+      internalID: 5066272385136580551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_8
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 604
+        width: 26
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4c1b1f2ba47f450800000000000000
+      internalID: 6122444350853072104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_9
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 604
+        width: 38
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1e92be6733e9d50800000000000000
+      internalID: 6745885877692129761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_10
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 604
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00fa320d7bb1dcf90800000000000000
+      internalID: -6931853775168360704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_11
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 604
+        width: 42
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3443bdaad53283200800000000000000
+      internalID: 159916671977075779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_12
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 604
+        width: 26
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5397d0295b39b3f70800000000000000
+      internalID: 9168083874491496757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_13
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 604
+        width: 38
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3715cfb1f5a1fa0800000000000000
+      internalID: -5829242193875733520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_14
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 604
+        width: 54
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e47200e627dc5c0800000000000000
+      internalID: -4193569861237518732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_15
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 604
+        width: 42
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64f2fc326dcdaa20800000000000000
+      internalID: 3075339942376961130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_16
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 504
+        width: 27
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b6e6152a7052ff0800000000000000
+      internalID: -61634626167346294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_17
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 504
+        width: 37
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0562cfc7a3c321140800000000000000
+      internalID: 4688876383948777040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_18
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 504
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c09985d0e20566a0800000000000000
+      internalID: -6456751326087245630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_19
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 504
+        width: 42
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081e4b7735a146290800000000000000
+      internalID: -7898158900708056704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_20
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 504
+        width: 27
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865147d9e5971ae20800000000000000
+      internalID: 3360100244270617960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_21
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 504
+        width: 39
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04fba675060f0950800000000000000
+      internalID: 6417354614561829898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_22
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 504
+        width: 55
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca29ef66ddff4ef0800000000000000
+      internalID: -121599567473333562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_23
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 504
+        width: 43
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b381963e097876590800000000000000
+      internalID: -7681021583096735685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_24
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 405
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f820be775a0a735e0800000000000000
+      internalID: -1929897282763029873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 403
+        width: 36
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e117cce2dd0931530800000000000000
+      internalID: 3824559788215005470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_26
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 400
+        width: 35
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afaa3ef89b293730800000000000000
+      internalID: 3979259681858826146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_27
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 404
+        width: 36
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decc56de397e0eed0800000000000000
+      internalID: -2386653179977282323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_28
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 405
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0459a237e077940800000000000000
+      internalID: 5293715774795759869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_29
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 402
+        width: 35
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8994ace4a2e63b650800000000000000
+      internalID: 6247458236082571672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_30
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 400
+        width: 35
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d9a3d330ae60760800000000000000
+      internalID: 7423878335399894313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_31
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 402
+        width: 35
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811cd256419e68c50800000000000000
+      internalID: 6667272572174713112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_32
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 305
+        width: 37
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e07e398be32ba560800000000000000
+      internalID: 7325988713375101160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_33
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 302
+        width: 42
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9b5a63c0188b5d0800000000000000
+      internalID: -3046543258459719259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_34
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 301
+        width: 46
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf9a7a48153cef70800000000000000
+      internalID: 9217800915765600199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_35
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 303
+        width: 42
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e441288133b247bf0800000000000000
+      internalID: -327589374436699058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_36
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 305
+        width: 37
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319277b14a63c8400800000000000000
+      internalID: 327696951354534163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_37
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 302
+        width: 39
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645b667897ae857a0800000000000000
+      internalID: -6388098263741450938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_38
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 302
+        width: 48
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94888b31cd012d770800000000000000
+      internalID: 8633981973032372297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_39
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 302
+        width: 38
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f210cacc82424c770800000000000000
+      internalID: 8630062543599829295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_40
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 201
+        width: 34
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d11e258f234593a0800000000000000
+      internalID: -6659342602620497455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_41
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 200
+        width: 41
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab184e10859f63b30800000000000000
+      internalID: 4266871853364314554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_42
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 200
+        width: 49
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a461cc89e307430800000000000000
+      internalID: 3778588913343810089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_43
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 200
+        width: 39
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af02764f49355ea60800000000000000
+      internalID: 7702654636907766010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_44
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 201
+        width: 34
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcbccd774424a740800000000000000
+      internalID: 5162290962345278654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_45
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 202
+        width: 40
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856a1ea7a4e390b60800000000000000
+      internalID: 7712764326458795608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_46
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 200
+        width: 44
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee0f9c0dc0cdac20800000000000000
+      internalID: 3219441295552351977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_47
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 202
+        width: 40
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d38794079782580800000000000000
+      internalID: -8851691544420794981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_48
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 104
+        width: 35
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcaba82781eea6890800000000000000
+      internalID: -7463891643644855601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_49
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 102
+        width: 40
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc85edc240b23f00800000000000000
+      internalID: 1095131460373155067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_50
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 101
+        width: 48
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfa78378e6a9b7e0800000000000000
+      internalID: -1749183462955831370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_51
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 101
+        width: 38
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef161b72a66db7d0800000000000000
+      internalID: -2901049736920948760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_52
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 104
+        width: 35
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f31410e8a19ae440800000000000000
+      internalID: 4965941693629338612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_53
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 103
+        width: 41
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6be702a122494960800000000000000
+      internalID: 7586667759502093163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_54
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 100
+        width: 46
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e54561eff980420800000000000000
+      internalID: 2596501098824228468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_55
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 104
+        width: 41
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c192dbdb9dc336d00800000000000000
+      internalID: 964681651076278556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_56
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 2
+        width: 37
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7640f5d1ebeb430f0800000000000000
+      internalID: -1138075082072062873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_57
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 3
+        width: 40
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf9be97b017102d0800000000000000
+      internalID: -3314243556663910457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_58
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1
+        width: 45
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9fa307b32bf05f0800000000000000
+      internalID: -788215441410819673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_59
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 3
+        width: 41
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d254c405cb1eb6e70800000000000000
+      internalID: 9109622870204237101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_60
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 2
+        width: 37
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad4d19b6528f4800800000000000000
+      internalID: 598840584448069033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_61
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 0
+        width: 41
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a13c7d7ff0c2170800000000000000
+      internalID: 8154910582412352113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_62
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 0
+        width: 49
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b888928822fd6420800000000000000
+      internalID: 2625020413630515378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder movement_63
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 0
+        width: 39
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05123ca9b55c64aa0800000000000000
+      internalID: -6177032841662881456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
