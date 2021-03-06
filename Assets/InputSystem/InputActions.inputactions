@@ -14,10 +14,18 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Sneak",
+                    "name": "roll",
                     "type": "Button",
-                    "id": "def1c9f4-9c50-4d1b-907a-3617394c569f",
+                    "id": "82122790-6c0b-46f8-9752-1b54da443c10",
                     "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Aim",
+                    "type": "Value",
+                    "id": "cfb2f7cc-9e6a-461b-936f-01ed5f52847f",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 }
@@ -80,12 +88,23 @@
                 },
                 {
                     "name": "",
-                    "id": "8e8b2e8a-f71c-4b69-92bb-e07bece5146e",
-                    "path": "<Keyboard>/ctrl",
+                    "id": "9d7bafd1-37a1-466b-b058-6180ff3d7495",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Sneak",
+                    "action": "roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "72d6e291-7792-47d3-84d8-0c3980f38662",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

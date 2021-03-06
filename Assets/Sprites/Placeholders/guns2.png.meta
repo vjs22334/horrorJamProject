@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: 92abcb44de3aa9a40bf20f0e0ef7ce77
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 284474344389155965
+    second: guns2_0
+  - first:
+      213: 655476041935713522
+    second: guns2_1
+  - first:
+      213: 2150245060085835595
+    second: guns2_2
+  - first:
+      213: -481105744458781473
+    second: guns2_3
+  - first:
+      213: -3054518575010034538
+    second: guns2_4
+  - first:
+      213: -1078578638554094868
+    second: guns2_5
+  - first:
+      213: 7237325607962359841
+    second: guns2_6
+  - first:
+      213: -683169532530049056
+    second: guns2_7
+  - first:
+      213: 3814542748119582878
+    second: guns2_8
+  - first:
+      213: 3188468722758050603
+    second: guns2_9
+  - first:
+      213: 6762801210066261390
+    second: guns2_10
+  - first:
+      213: -3379577190569702285
+    second: guns2_11
+  - first:
+      213: -7963201908151298212
+    second: guns2_12
+  - first:
+      213: 8083706792907660486
+    second: guns2_13
+  - first:
+      213: -2037175504886064466
+    second: guns2_14
+  - first:
+      213: 3167257710701782891
+    second: guns2_15
+  - first:
+      213: 4110863916973915319
+    second: guns2_16
+  - first:
+      213: -8793527113804089662
+    second: guns2_17
+  - first:
+      213: -7937076773892389385
+    second: guns2_18
+  - first:
+      213: -6057398216384746536
+    second: guns2_19
+  - first:
+      213: -1892538612697617956
+    second: guns2_20
+  - first:
+      213: -6299353259530632013
+    second: guns2_21
+  - first:
+      213: 4972371134121462065
+    second: guns2_22
+  - first:
+      213: -7843638085985193123
+    second: guns2_23
+  - first:
+      213: 7287737665363866177
+    second: guns2_24
+  - first:
+      213: -8621500533783557464
+    second: guns2_25
+  - first:
+      213: 6171859284915603665
+    second: guns2_26
+  - first:
+      213: 4129115585570674282
+    second: guns2_27
+  - first:
+      213: 801518100539969925
+    second: guns2_28
+  - first:
+      213: 8237707536691558998
+    second: guns2_29
+  - first:
+      213: 3551115789523741980
+    second: guns2_30
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: guns2_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 101
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c1705b8e7a2f300800000000000000
+      internalID: 284474344389155965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 101
+        width: 52
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f47b5ebcf7b81900800000000000000
+      internalID: 655476041935713522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 104
+        width: 63
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47647a5d7437dd10800000000000000
+      internalID: 2150245060085835595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 105
+        width: 65
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc622adfd4c259f0800000000000000
+      internalID: -481105744458781473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_4
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 103
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cc1b02a8b2c95d0800000000000000
+      internalID: -3054518575010034538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_5
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 111
+        width: 59
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2a8aa517e1801f0800000000000000
+      internalID: -1078578638554094868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_6
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 111
+        width: 59
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1283f62ab45207460800000000000000
+      internalID: 7237325607962359841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_7
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 111
+        width: 59
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef3d240ee4e486f0800000000000000
+      internalID: -683169532530049056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_8
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 111
+        width: 62
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98c53a4b6affe430800000000000000
+      internalID: 3814542748119582878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_9
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 109
+        width: 59
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23ef6df867bf3c20800000000000000
+      internalID: 3188468722758050603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 66
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85d494aedb4add50800000000000000
+      internalID: 6762801210066261390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_11
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 77
+        width: 65
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c841173745911d0800000000000000
+      internalID: -3379577190569702285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_12
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 78
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57dded2e060d7190800000000000000
+      internalID: -7963201908151298212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_13
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 76
+        width: 66
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc5ca3bf781f2070800000000000000
+      internalID: 8083706792907660486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_14
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 72
+        width: 62
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa9326fbaf7ab3e0800000000000000
+      internalID: -2037175504886064466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_15
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 77
+        width: 55
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b672f766b1c54fb20800000000000000
+      internalID: 3167257710701782891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_16
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 78
+        width: 55
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc7333c3f8bc0930800000000000000
+      internalID: 4110863916973915319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_17
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 78
+        width: 55
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6f0fa1ead17f580800000000000000
+      internalID: -8793527113804089662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_18
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 78
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f504210ab6d9d190800000000000000
+      internalID: -7937076773892389385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_19
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 75
+        width: 55
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db6d496a6ccfeba0800000000000000
+      internalID: -6057398216384746536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 38
+        width: 59
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9a27aa82a5cb5e0800000000000000
+      internalID: -1892538612697617956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_21
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 39
+        width: 55
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b44afaf5933498a0800000000000000
+      internalID: -6299353259530632013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_22
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 36
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13947b4a339610540800000000000000
+      internalID: 4972371134121462065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_23
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 35
+        width: 52
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53b02ad7bcc52390800000000000000
+      internalID: -7843638085985193123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_24
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 41
+        width: 58
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1427f386bce332560800000000000000
+      internalID: 7287737665363866177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_25
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 50
+        width: 62
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa8df471f64a5880800000000000000
+      internalID: -8621500533783557464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_26
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 50
+        width: 62
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d84719d159d6a550800000000000000
+      internalID: 6171859284915603665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_27
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 50
+        width: 62
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6618728fb09d4930800000000000000
+      internalID: 4129115585570674282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_28
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 49
+        width: 62
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5811bbf37709f1b00800000000000000
+      internalID: 801518100539969925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_29
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 44
+        width: 62
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65afe000c57325270800000000000000
+      internalID: 8237707536691558998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns2_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 10
+        width: 65
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1de7d6fef8184130800000000000000
+      internalID: 3551115789523741980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
