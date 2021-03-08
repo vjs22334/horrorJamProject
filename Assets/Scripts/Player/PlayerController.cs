@@ -11,10 +11,11 @@ public class PlayerController : MonoBehaviour
     public float rollMovementSpeed = 20;
 
     [Header("References")]
-    [SerializeField] Transform gunTransform;
+    [SerializeField] Transform gunPivotTransform;
     InputActions inputActions;
     Rigidbody2D rigidbody;
     Animator animator;
+    IGun equipedGun;
     [SerializeField] SpriteRenderer playerSprite;
 
     Camera mainCam;
@@ -32,7 +33,8 @@ public class PlayerController : MonoBehaviour
             animator = GetComponent<Animator>();
             inputActions = new InputActions();
             moveSpeed = normalMovementSpeed;
-            mainCam = Camera.main;            
+            mainCam = Camera.main;   
+            equipedGun = gunPivotTransform.GetComponentInChildren<IGun>();         
         }
         void OnEnable()
         {
@@ -40,6 +42,8 @@ public class PlayerController : MonoBehaviour
             inputActions.Player.movement.canceled += PlayerMovementStoppedHandler;
             inputActions.Player.roll.performed += PlayerRolledHandler;
             inputActions.Player.Aim.performed += PlayerAimHandler;
+            inputActions.Player.Shoot.performed += PlayerShootHandler;
+            inputActions.Player.reload.performed += PlayerReloadHandler;
             inputActions.Player.Enable();
         }
 
@@ -49,12 +53,14 @@ public class PlayerController : MonoBehaviour
             inputActions.Player.movement.performed -= PlayerMovementHandler;
             inputActions.Player.movement.canceled -= PlayerMovementStoppedHandler;
             inputActions.Player.roll.performed -= PlayerRolledHandler;
-            inputActions.Player.Aim.performed -= PlayerAimHandler; 
+            inputActions.Player.Aim.performed -= PlayerAimHandler;
+            inputActions.Player.Shoot.performed -= PlayerShootHandler;
+            inputActions.Player.reload.performed -= PlayerReloadHandler; 
             inputActions.Player.Disable();
         }
 
    
-    void Update()
+        void Update()
         {
             HandleAnimations();
         }
@@ -84,6 +90,20 @@ public class PlayerController : MonoBehaviour
             moveDir = context.ReadValue<Vector2>().normalized;
         }
 
+        private void PlayerReloadHandler(InputAction.CallbackContext context)
+        {
+            if(equipedGun!=null){
+                equipedGun.Reload();
+            }
+        }
+
+        private void PlayerShootHandler(InputAction.CallbackContext context)
+        {
+            if(equipedGun!=null){
+                equipedGun.Fire();
+            }
+        }
+
         private void PlayerAimHandler(InputAction.CallbackContext context)
         {
             Vector2 mousePos = context.ReadValue<Vector2>();
@@ -92,11 +112,11 @@ public class PlayerController : MonoBehaviour
             float angle = Mathf.Atan2(aimDirection.y,aimDirection.x)*Mathf.Rad2Deg;
             if(aimDirection.x >= 0){
                 playerSprite.transform.localEulerAngles =  new Vector3(0,0,0);
-                gunTransform.eulerAngles = new Vector3(0,0,angle);
+                gunPivotTransform.eulerAngles = new Vector3(0,0,angle);
             }
             else{
                 playerSprite.transform.localEulerAngles =  new Vector3(0,180,0);
-                gunTransform.eulerAngles = new Vector3(180,0,-angle);
+                gunPivotTransform.eulerAngles = new Vector3(180,0,-angle);
             }
             
         }
