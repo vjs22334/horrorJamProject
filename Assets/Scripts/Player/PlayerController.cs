@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rigidbody;
     Animator animator;
     IGun equipedGun;
-    [SerializeField] SpriteRenderer playerSprite;
+    [SerializeField] Transform playerSpriteParent;
 
     Camera mainCam;
 
@@ -78,11 +78,15 @@ public class PlayerController : MonoBehaviour
         {
            animator.SetTrigger("roll");
            moveSpeed = rollMovementSpeed;
+           gunPivotTransform.gameObject.SetActive(false);
+           inputActions.Player.Shoot.Disable();
         }
 
         //called by animation event in roll clip
         public void PlayerRollCompleteHandler(){
             moveSpeed = normalMovementSpeed;
+            inputActions.Player.Shoot.Enable();
+            gunPivotTransform.gameObject.SetActive(true);
         }
 
         private void PlayerMovementHandler(InputAction.CallbackContext context)
@@ -111,11 +115,11 @@ public class PlayerController : MonoBehaviour
             Vector2 aimDirection = (screenPos-transform.position).normalized;
             float angle = Mathf.Atan2(aimDirection.y,aimDirection.x)*Mathf.Rad2Deg;
             if(aimDirection.x >= 0){
-                playerSprite.transform.localEulerAngles =  new Vector3(0,0,0);
+                playerSpriteParent.transform.localEulerAngles =  new Vector3(0,0,0);
                 gunPivotTransform.eulerAngles = new Vector3(0,0,angle);
             }
             else{
-                playerSprite.transform.localEulerAngles =  new Vector3(0,180,0);
+                playerSpriteParent.transform.localEulerAngles =  new Vector3(0,180,0);
                 gunPivotTransform.eulerAngles = new Vector3(180,0,-angle);
             }
             
