@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,14 +13,16 @@ public class PlayerController : MonoBehaviour
 
     [Header("References")]
     [SerializeField] Transform gunPivotTransform;
+    public Text BulletCountText;
     InputActions inputActions;
     Rigidbody2D rigidbody;
     Animator animator;
-    IGun equipedGun;
+    Gun equipedGun;
     [SerializeField] Transform playerSpriteParent;
 
     Camera mainCam;
 
+    bool fireButtonHeld = false;
 
 
     Vector2 moveDir = Vector2.zero;
@@ -34,7 +37,8 @@ public class PlayerController : MonoBehaviour
             inputActions = new InputActions();
             moveSpeed = normalMovementSpeed;
             mainCam = Camera.main;   
-            equipedGun = gunPivotTransform.GetComponentInChildren<IGun>();         
+            equipedGun = gunPivotTransform.GetComponentInChildren<Gun>();
+            BulletCountText.text = equipedGun.BulletsInClip.ToString();
         }
         void OnEnable()
         {
@@ -43,6 +47,7 @@ public class PlayerController : MonoBehaviour
             inputActions.Player.roll.performed += PlayerRolledHandler;
             inputActions.Player.Aim.performed += PlayerAimHandler;
             inputActions.Player.Shoot.performed += PlayerShootHandler;
+            inputActions.Player.Shoot.canceled += PlayerShootReleaseHandler;
             inputActions.Player.reload.performed += PlayerReloadHandler;
             inputActions.Player.Enable();
         }
@@ -55,6 +60,7 @@ public class PlayerController : MonoBehaviour
             inputActions.Player.roll.performed -= PlayerRolledHandler;
             inputActions.Player.Aim.performed -= PlayerAimHandler;
             inputActions.Player.Shoot.performed -= PlayerShootHandler;
+            inputActions.Player.Shoot.canceled -= PlayerShootReleaseHandler;
             inputActions.Player.reload.performed -= PlayerReloadHandler; 
             inputActions.Player.Disable();
         }
@@ -63,6 +69,12 @@ public class PlayerController : MonoBehaviour
         void Update()
         {
             HandleAnimations();
+            if(fireButtonHeld){
+                if(equipedGun!=null){
+                    equipedGun.Fire();
+                    BulletCountText.text = equipedGun.BulletsInClip.ToString();
+                }
+            }
         }
 
     
@@ -85,8 +97,8 @@ public class PlayerController : MonoBehaviour
         //called by animation event in roll clip
         public void PlayerRollCompleteHandler(){
             moveSpeed = normalMovementSpeed;
-            inputActions.Player.Shoot.Enable();
             gunPivotTransform.gameObject.SetActive(true);
+            inputActions.Player.Shoot.Enable();
         }
 
         private void PlayerMovementHandler(InputAction.CallbackContext context)
@@ -98,15 +110,27 @@ public class PlayerController : MonoBehaviour
         {
             if(equipedGun!=null){
                 equipedGun.Reload();
+                BulletCountText.text = "Reloading";
+                StartCoroutine(FinishReloading());
             }
+        }
+
+        IEnumerator FinishReloading(){
+            while(equipedGun.Reloading){
+                yield return null;
+            }
+            BulletCountText.text = equipedGun.BulletsInClip.ToString();
         }
 
         private void PlayerShootHandler(InputAction.CallbackContext context)
         {
-            if(equipedGun!=null){
-                equipedGun.Fire();
-            }
+            fireButtonHeld = true;
         }
+        private void PlayerShootReleaseHandler(InputAction.CallbackContext context)
+        {
+            fireButtonHeld = false;
+        }
+
 
         private void PlayerAimHandler(InputAction.CallbackContext context)
         {

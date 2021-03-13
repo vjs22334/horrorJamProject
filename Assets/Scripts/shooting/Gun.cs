@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Gun : MonoBehaviour,IGun
+public class Gun : MonoBehaviour
 {
     [Header("references")]
     public Transform muzzleTransform;
@@ -18,13 +19,25 @@ public class Gun : MonoBehaviour,IGun
     float fireDelayTimer;
     float reloadTimer;
     bool reloading;
-    bool canFire{
+    public bool canFire{
         get{
             return bulletsInclip > 0 && fireDelayTimer <=0 && !reloading;
         }
     }
 
-    void Start()
+    public int BulletsInClip{
+        get{
+            return bulletsInclip;
+        }
+    }
+
+    public bool Reloading{
+        get{
+            return reloading;
+        }
+    }
+
+    void Awake()
     {
         fireDelayTimer = 0;
         reloadTimer = 0;
