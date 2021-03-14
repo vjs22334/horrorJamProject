@@ -18,3 +18,7 @@ MonoBehaviour:
   - 15
   - 0
   - -15
+  positionOffsets:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}

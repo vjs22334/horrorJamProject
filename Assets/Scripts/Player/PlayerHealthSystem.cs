@@ -11,4 +11,10 @@ public class PlayerHealthSystem : HealthSystem
     {
         healthBar.fillAmount = (float)health/(float)MaxHealth;
     }
+
+    public override void Death()
+    {
+        base.Death();
+        LevelManager.Instance.GameOver();
+    }
 }

@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [Header("References")]
     [SerializeField] Transform gunPivotTransform;
     public Text BulletCountText;
+    public SpriteRenderer CrossHair;
     InputActions inputActions;
     Rigidbody2D rigidbody;
     Animator animator;
@@ -38,7 +39,6 @@ public class PlayerController : MonoBehaviour
             moveSpeed = normalMovementSpeed;
             mainCam = Camera.main;   
             equipedGun = gunPivotTransform.GetComponentInChildren<Gun>();
-            BulletCountText.text = equipedGun.BulletsInClip.ToString();
         }
         void OnEnable()
         {
@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
             inputActions.Player.Shoot.canceled += PlayerShootReleaseHandler;
             inputActions.Player.reload.performed += PlayerReloadHandler;
             inputActions.Player.Enable();
+            BulletCountText.text = equipedGun.BulletsInClip.ToString();
         }
 
 
@@ -134,8 +135,12 @@ public class PlayerController : MonoBehaviour
 
         private void PlayerAimHandler(InputAction.CallbackContext context)
         {
+            if(mainCam == null){
+                mainCam = Camera.main;
+            }
             Vector2 mousePos = context.ReadValue<Vector2>();
             Vector3 screenPos = mainCam.ScreenToWorldPoint(mousePos);
+            CrossHair.transform.position = new Vector3(screenPos.x,screenPos.y,0);
             Vector2 aimDirection = (screenPos-transform.position).normalized;
             float angle = Mathf.Atan2(aimDirection.y,aimDirection.x)*Mathf.Rad2Deg;
             if(aimDirection.x >= 0){

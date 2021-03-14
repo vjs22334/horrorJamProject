@@ -461,9 +461,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089b5e50e7f9704469ebab34ff49734e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveMentSpeed: 5
+  moveMentSpeed: 4
   minDistanceFromTarget: 0
-  maxAttackDistanceFromTarget: 1.5
+  maxAttackDistanceFromTarget: 1
   lineOfSightLayerMask:
     serializedVersion: 2
     m_Bits: 1025
@@ -471,4 +471,5 @@ MonoBehaviour:
   Target: {fileID: 0}
   navMeshAgent: {fileID: 6528807113354180351}
   SpriteTransform: {fileID: 6528807111615444436}
-  explosionPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 2995994665363719218, guid: 20a7ea8acf33d7441bccd901a5d750bb,
+    type: 3}

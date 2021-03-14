@@ -16,3 +16,5 @@ MonoBehaviour:
     type: 3}
   spreadAngles:
   - 0
+  positionOffsets:
+  - {x: 0, y: 0}

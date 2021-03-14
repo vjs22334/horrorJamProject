@@ -7,4 +7,5 @@ public class ShotPattern : ScriptableObject
 {
     public GameObject bulletPrefab;
     public float[] spreadAngles;
+    public Vector2[] positionOffsets;
 }

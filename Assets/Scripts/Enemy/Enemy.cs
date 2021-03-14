@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using System;
 
 public class Enemy : MonoBehaviour
 {
+    public static event Action OnEnemyKilled;
     public float moveMentSpeed = 0;
     public float minDistanceFromTarget = 0;
     public float maxAttackDistanceFromTarget = 0;
@@ -17,7 +19,7 @@ public class Enemy : MonoBehaviour
     public NavMeshAgent navMeshAgent;
     public Transform SpriteTransform;
 
-    protected Vector3 vectorToTarget;
+    protected Vector2 vectorToTarget;
     protected bool playerInLineOfSight;
 
 
@@ -33,6 +35,9 @@ public class Enemy : MonoBehaviour
     /// </summary>
     void Update()
     {
+        if(Target == null){
+            return;
+        }
         vectorToTarget = Target.position - transform.position;
         playerInLineOfSight = GetPlayerInLineOfSight();
         if(vectorToTarget.magnitude > maxAttackDistanceFromTarget || !playerInLineOfSight){
@@ -44,7 +49,7 @@ public class Enemy : MonoBehaviour
             Attack();
         }
         else if(vectorToTarget.magnitude < minDistanceFromTarget && playerInLineOfSight){
-            Vector3 avoidPos = Target.position + vectorToTarget.normalized*-1*minDistanceFromTarget;
+            Vector3 avoidPos = Target.position + (Vector3)vectorToTarget.normalized*-1*minDistanceFromTarget;
             NavMeshPath path = new NavMeshPath();
             navMeshAgent.SetDestination(avoidPos);
         }
@@ -73,5 +78,15 @@ public class Enemy : MonoBehaviour
         else{
             SpriteTransform.localScale = new Vector3(1,1,1);
         }
+    }
+
+    public virtual void Initialize(Transform playerTransform){
+        Target = playerTransform;
+    }
+   
+    void OnDestroy()
+    {
+        if(OnEnemyKilled!=null)
+            OnEnemyKilled();
     }
 }

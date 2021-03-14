@@ -47,11 +47,11 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        if(reloadTime > 0 && reloading){
-            reloadTime -= Time.deltaTime;
+        if(reloadTimer > 0 && reloading){
+            reloadTimer -= Time.deltaTime;
         }else if(reloading){
             bulletsInclip = clipSize;
-            reloadTime = 0;
+            reloadTimer = 0;
             reloading = false;
         }
 
@@ -67,10 +67,10 @@ public class Gun : MonoBehaviour
     public void Fire()
     {
         if(canFire){
-            foreach (float angle in shotPattern.spreadAngles)
+            for (int i = 0; i < shotPattern.spreadAngles.Length; i++)
             {
                 //TODO: Pool this
-                GameObject bulletGo = Instantiate(shotPattern.bulletPrefab,muzzleTransform.position,Quaternion.Euler(0,0,angle)*muzzleTransform.rotation);
+                GameObject bulletGo = Instantiate(shotPattern.bulletPrefab,muzzleTransform.position+(Vector3)shotPattern.positionOffsets[i],Quaternion.Euler(0,0,shotPattern.spreadAngles[i])*muzzleTransform.rotation);
             }
             
             bulletsInclip--;
