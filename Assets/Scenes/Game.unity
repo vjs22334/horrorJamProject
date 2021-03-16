@@ -128,6 +128,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1143474616, guid: 3f79d7d8fd07bcd4b91b7dea126ab909, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 325793732}
     - target: {fileID: 1114150115277420263, guid: 3f79d7d8fd07bcd4b91b7dea126ab909,
         type: 3}
       propertyPath: m_RootOrder
@@ -201,6 +205,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 325793727}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &325793732 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1114150115277420262, guid: 3f79d7d8fd07bcd4b91b7dea126ab909,
+    type: 3}
+  m_PrefabInstance: {fileID: 325793727}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325793728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec9ebae1ce40464fb2eea39920779ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1145435492
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +780,7 @@ MonoBehaviour:
   - Level_1
   - Level_2
   - Level_3
+  - Level_4
   GameOverPanel: {fileID: 1145435492}
   playerGO: {fileID: 325793728}
 --- !u!4 &1976343666

@@ -70,7 +70,8 @@ public class Gun : MonoBehaviour
             for (int i = 0; i < shotPattern.spreadAngles.Length; i++)
             {
                 //TODO: Pool this
-                GameObject bulletGo = Instantiate(shotPattern.bulletPrefab,muzzleTransform.position+(Vector3)shotPattern.positionOffsets[i],Quaternion.Euler(0,0,shotPattern.spreadAngles[i])*muzzleTransform.rotation);
+                float angleRandomness = UnityEngine.Random.Range(-shotPattern.angleRandomness,shotPattern.angleRandomness);
+                GameObject bulletGo = Instantiate(shotPattern.bulletPrefab,muzzleTransform.position+(Vector3)shotPattern.positionOffsets[i],Quaternion.Euler(0,0,shotPattern.spreadAngles[i]+angleRandomness)*muzzleTransform.rotation);
             }
             
             bulletsInclip--;

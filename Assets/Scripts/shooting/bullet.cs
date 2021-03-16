@@ -24,7 +24,14 @@ public class bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if((other.CompareTag("Player") && damagesPlayer)||(other.CompareTag("enemy") && damagesEnemy)){
+        if((other.CompareTag("Player") && damagesPlayer && !other.GetComponent<PlayerController>().Iframes)){
+            HealthSystem healthSystem = other.GetComponent<HealthSystem>();
+            if(healthSystem!=null){
+                healthSystem.TakeDamage(damage);
+            }
+            Destroy(gameObject);
+        }
+        else if((other.CompareTag("enemy") && damagesEnemy)){
             HealthSystem healthSystem = other.GetComponent<HealthSystem>();
             if(healthSystem!=null){
                 healthSystem.TakeDamage(damage);

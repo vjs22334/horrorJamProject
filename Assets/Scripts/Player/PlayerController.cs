@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
 
     bool fireButtonHeld = false;
 
+    public bool Iframes = false;
+
 
     Vector2 moveDir = Vector2.zero;
     float moveSpeed;
@@ -93,6 +95,7 @@ public class PlayerController : MonoBehaviour
            moveSpeed = rollMovementSpeed;
            gunPivotTransform.gameObject.SetActive(false);
            inputActions.Player.Shoot.Disable();
+           Iframes = true;
         }
 
         //called by animation event in roll clip
@@ -100,6 +103,7 @@ public class PlayerController : MonoBehaviour
             moveSpeed = normalMovementSpeed;
             gunPivotTransform.gameObject.SetActive(true);
             inputActions.Player.Shoot.Enable();
+            Iframes = false;
         }
 
         private void PlayerMovementHandler(InputAction.CallbackContext context)

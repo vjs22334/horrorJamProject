@@ -33,30 +33,32 @@ public class Enemy : MonoBehaviour
     /// <summary>
     /// Update is called every frame, if the MonoBehaviour is enabled.
     /// </summary>
-    void Update()
+    public virtual void Update()
     {
+        // if there is no target do nothing
         if(Target == null){
             return;
         }
         vectorToTarget = Target.position - transform.position;
         playerInLineOfSight = GetPlayerInLineOfSight();
+        //if player is too far away move towards him 
         if(vectorToTarget.magnitude > maxAttackDistanceFromTarget || !playerInLineOfSight){
             navMeshAgent.SetDestination(Target.position);
         }
+        // if player is in attack range stop and attack
         else if(vectorToTarget.magnitude >= minDistanceFromTarget && vectorToTarget.magnitude <= maxAttackDistanceFromTarget && playerInLineOfSight){
             navMeshAgent.isStopped = true;
             navMeshAgent.ResetPath();
             Attack();
         }
+        //If player is too close move away from him
         else if(vectorToTarget.magnitude < minDistanceFromTarget && playerInLineOfSight){
-            Vector3 avoidPos = Target.position + (Vector3)vectorToTarget.normalized*-1*minDistanceFromTarget;
-            NavMeshPath path = new NavMeshPath();
-            navMeshAgent.SetDestination(avoidPos);
+            Avoid();
         }
         enemyUpdate();
     }
 
-    bool GetPlayerInLineOfSight(){
+    protected bool GetPlayerInLineOfSight(){
         RaycastHit2D raycastHit;
         Debug.DrawRay(transform.position,vectorToTarget.normalized*lineOfSightLength,Color.green);
         raycastHit = Physics2D.Raycast(transform.position,vectorToTarget.normalized,lineOfSightLength,lineOfSightLayerMask);
@@ -68,6 +70,12 @@ public class Enemy : MonoBehaviour
 
     public virtual void Attack(){
 
+    }
+
+    public virtual void Avoid(){
+        Vector3 avoidPos = Target.position + (Vector3)vectorToTarget.normalized*-1*minDistanceFromTarget;
+        NavMeshPath path = new NavMeshPath();
+        navMeshAgent.SetDestination(avoidPos);
     }
 
     public virtual void enemyUpdate(){

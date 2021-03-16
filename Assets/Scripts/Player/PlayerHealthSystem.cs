@@ -7,6 +7,8 @@ public class PlayerHealthSystem : HealthSystem
 {
     public Image healthBar;
 
+    public PlayerController playerController;
+
     public override void OnHealthChanged(int health)
     {
         healthBar.fillAmount = (float)health/(float)MaxHealth;
