@@ -569,7 +569,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114150115236928291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.402, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1114150113341900184}
@@ -654,6 +654,7 @@ MonoBehaviour:
   BulletCountText: {fileID: 552744283}
   CrossHair: {fileID: 4953640358513074602}
   playerSpriteParent: {fileID: 1114150115236928290}
+  Iframes: 0
 --- !u!61 &1114150115277420265
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -667,7 +668,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.014249086, y: -0.3460253}
+  m_Offset: {x: 0.014249086, y: 0.017488122}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -678,7 +679,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5953262, y: 0.7902218}
+  m_Size: {x: 0.5953262, y: 0.9528463}
   m_EdgeRadius: 0
 --- !u!95 &1114150115277420261
 Animator:
@@ -715,6 +716,7 @@ MonoBehaviour:
   damageColor: {r: 1, g: 0, b: 0, a: 0.53333336}
   sprite: {fileID: 1114150114964163439}
   healthBar: {fileID: 207717510}
+  playerController: {fileID: 1114150115277420262}
 --- !u!1 &4973024729492244853
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,7 +742,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4973024729492244853}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.402, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1114150115277420263}
@@ -806,17 +808,17 @@ PrefabInstance:
     - target: {fileID: 7028323752039805399, guid: 836fc5ec6ca60fd488237c6ed8f7e0ca,
         type: 3}
       propertyPath: clipSize
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7028323752039805399, guid: 836fc5ec6ca60fd488237c6ed8f7e0ca,
         type: 3}
       propertyPath: fireRate
-      value: 0.4
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7028323752039805399, guid: 836fc5ec6ca60fd488237c6ed8f7e0ca,
         type: 3}
       propertyPath: reloadTime
-      value: 1.5
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7028323752039805399, guid: 836fc5ec6ca60fd488237c6ed8f7e0ca,
         type: 3}
