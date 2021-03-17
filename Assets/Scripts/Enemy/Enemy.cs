@@ -102,6 +102,8 @@ public class Enemy : MonoBehaviour
         
         if(OnEnemyKilled!=null)
             OnEnemyKilled();
+        
+        AudioManager.Instance.PlayOneShot(AudioManager.Instance.EnemyDeadClip);
     }
     
    

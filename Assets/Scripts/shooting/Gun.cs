@@ -72,6 +72,7 @@ public class Gun : MonoBehaviour
                 //TODO: Pool this
                 float angleRandomness = UnityEngine.Random.Range(-shotPattern.angleRandomness,shotPattern.angleRandomness);
                 GameObject bulletGo = Instantiate(shotPattern.bulletPrefab,muzzleTransform.position+(Vector3)shotPattern.positionOffsets[i],Quaternion.Euler(0,0,shotPattern.spreadAngles[i]+angleRandomness)*muzzleTransform.rotation);
+                AudioManager.Instance.PlayOneShot(AudioManager.Instance.GunFireClip);
             }
             
             bulletsInclip--;

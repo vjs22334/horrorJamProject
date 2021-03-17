@@ -11,6 +11,8 @@ public class Level : MonoBehaviour
 
     public GameObject Teleporter;
 
+    public bool bossFight = false;
+
     GameObject Player;
     int enemiesCount = 0;
     
@@ -27,7 +29,10 @@ public class Level : MonoBehaviour
             enemy.Initialize(Player.transform);
             enemiesCount++;
         }
-        if(enemiesCount > 0){
+        if(enemiesCount == 1 && FindObjectOfType<BossEnemy>()!=null){
+            AudioManager.Instance.PlayBossMusic();
+        }
+        else if(enemiesCount > 0){
             AudioManager.Instance.PlayBattleMusic();
         }
         else{
@@ -62,7 +67,10 @@ public class Level : MonoBehaviour
         enemiesCount--;
         if(enemiesCount <= 0){
             Teleporter.SetActive(true);
-            AudioManager.Instance.PlayAmbienceMusic();
+            if(!bossFight)
+                AudioManager.Instance.PlayAmbienceMusic();
+            else
+                AudioManager.Instance.PlayBossEndMusic();
         }
     }
 }

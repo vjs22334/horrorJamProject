@@ -10,6 +10,7 @@ public class TelePorter : MonoBehaviour
         if(other.CompareTag("Player")){
             Instantiate(TeleportPS,transform.position,Quaternion.identity);
             Invoke(nameof(MoveToNextLevel),0.75f);
+            AudioManager.Instance.PlayOneShot(AudioManager.Instance.TeleporterClip);
         }
     }
 

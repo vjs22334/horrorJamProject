@@ -528,6 +528,7 @@ MonoBehaviour:
   PlayerSpawnPos: {fileID: 1281630360}
   camera: {fileID: 2008944947}
   Teleporter: {fileID: 2147456973}
+  bossFight: 1
 --- !u!1 &1117243778
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,9 +598,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Congrats! you beat the boss
-
-    Thanks for playing'
+  m_Text: "Thank you brave knight. \nYou have destroyed all evil in this once forsaken
+    cave...\n\n\nCongrats! you beat the boss\nThanks for playing"
 --- !u!222 &1117243781
 CanvasRenderer:
   m_ObjectHideFlags: 0

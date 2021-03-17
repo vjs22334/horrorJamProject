@@ -15,6 +15,7 @@ public class LaserAttack : BossAttack
         laser.SetActive(true);
         currAngle = -sweepAngle/2;
         laser.transform.localEulerAngles = new Vector3(0,0,currAngle);
+        AudioManager.Instance.PlayOneShot(AudioManager.Instance.BossLaserClip);
     }
 
     public override void OnExit(){
