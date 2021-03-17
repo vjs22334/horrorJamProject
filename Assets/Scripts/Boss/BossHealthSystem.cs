@@ -12,6 +12,7 @@ public class BossHealthSystem : EnemyHealthSystem
     }
 
     public void DestroyThis(){
+        GetComponent<Enemy>().EnemyKilled();
         Destroy(gameObject);
     }
 }

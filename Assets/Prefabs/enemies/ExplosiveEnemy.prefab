@@ -445,7 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cbc64b4a6ada1f4d90f877709bee2c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 100
+  MaxHealth: 40
   damageColor: {r: 0.07075471, g: 1, b: 0.09531611, a: 0.4392157}
   sprite: {fileID: 6528807111615444435}
   healthBar: {fileID: 1252530297}
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089b5e50e7f9704469ebab34ff49734e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveMentSpeed: 4
+  moveMentSpeed: 3.5
   minDistanceFromTarget: 0
   maxAttackDistanceFromTarget: 1
   lineOfSightLayerMask:

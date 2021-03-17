@@ -12,4 +12,10 @@ public class EnemyHealthSystem : HealthSystem
         healthBar.fillAmount = (float)health/(float)MaxHealth;
     }
 
+    public override void Death()
+    {
+        GetComponent<Enemy>().EnemyKilled();
+        base.Death();
+    }
+
 }

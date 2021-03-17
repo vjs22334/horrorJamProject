@@ -17,9 +17,9 @@ public class BossEnemy : Enemy
 
     void Awake()
     {
-        foreach (BossAttack atatck in bossAttacks)
+        foreach (BossAttack attack in bossAttacks)
         {
-            atatck.boss = this;
+            attack.boss = this;
         }
     }
 

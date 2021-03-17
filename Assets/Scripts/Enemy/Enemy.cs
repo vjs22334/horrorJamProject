@@ -61,13 +61,15 @@ public class Enemy : MonoBehaviour
     }
 
     protected bool GetPlayerInLineOfSight(){
-        RaycastHit2D raycastHit;
-        Debug.DrawRay(transform.position,vectorToTarget.normalized*lineOfSightLength,Color.green);
-        raycastHit = Physics2D.Raycast(transform.position,vectorToTarget.normalized,lineOfSightLength,lineOfSightLayerMask);
-        if(raycastHit && !raycastHit.collider.CompareTag("Player")){
-            return false;
+        RaycastHit2D raycastHit1,raycastHit2;
+        Debug.DrawRay(transform.position+(Vector3)Vector2.Perpendicular(vectorToTarget.normalized).normalized*0.1f,vectorToTarget.normalized*lineOfSightLength,Color.green);
+        Debug.DrawRay(transform.position-(Vector3)Vector2.Perpendicular(vectorToTarget.normalized).normalized*0.1f,vectorToTarget.normalized*lineOfSightLength,Color.green);
+        raycastHit1 = Physics2D.Raycast(transform.position+(Vector3)Vector2.Perpendicular(vectorToTarget.normalized).normalized*0.1f,vectorToTarget.normalized,lineOfSightLength,lineOfSightLayerMask);
+        raycastHit2 = Physics2D.Raycast(transform.position-(Vector3)Vector2.Perpendicular(vectorToTarget.normalized).normalized*0.1f,vectorToTarget.normalized,lineOfSightLength,lineOfSightLayerMask);
+        if(raycastHit1 && raycastHit1.collider.CompareTag("Player") && raycastHit2 && raycastHit2.collider.CompareTag("Player")){
+            return true;
         }
-        return true;
+        return false;
     }
 
     public virtual void Attack(){
@@ -93,12 +95,14 @@ public class Enemy : MonoBehaviour
     public virtual void Initialize(Transform playerTransform){
         Target = playerTransform;
     }
-    
-   
-    void OnDestroy()
-    {
-        Instantiate(DeathPs,transform.position,Quaternion.identity);
+
+    public void EnemyKilled(){
+        if(DeathPs!=null)
+            Instantiate(DeathPs,transform.position,Quaternion.identity);
+        
         if(OnEnemyKilled!=null)
             OnEnemyKilled();
     }
+    
+   
 }

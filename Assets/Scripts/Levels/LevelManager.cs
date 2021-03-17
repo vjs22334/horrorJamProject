@@ -13,6 +13,8 @@ public class LevelManager : MonoBehaviour
     public List<string> Levels;
 
     public GameObject GameOverPanel;
+    
+    public GameObject PausePanel;
 
     public GameObject playerGO;
     int LevelsLoadedCount = 0;
@@ -45,14 +47,12 @@ public class LevelManager : MonoBehaviour
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoadedHandler;
-        SceneManager.sceneUnloaded += OnSceneUnLoadedHandler;
 
     }
 
     void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoadedHandler;
-        SceneManager.sceneUnloaded -= OnSceneUnLoadedHandler;
     }
     
 
@@ -74,9 +74,12 @@ public class LevelManager : MonoBehaviour
         
     }
 
-    private void OnSceneUnLoadedHandler(Scene arg0)
+   
+    void Update()
     {
-        
+        if(Input.GetKey(KeyCode.Escape)){
+            Pause();
+        }
     }
 
     public void LoadNextLevel(){
@@ -102,6 +105,20 @@ public class LevelManager : MonoBehaviour
 
     public void Restart(){
         SceneManager.LoadScene("Game");
+    }
+
+    public void Pause(){
+        Time.timeScale = 0;
+        PausePanel.SetActive(true);
+    }
+
+    public void Quit(){
+        Application.Quit();
+    }
+
+    public void Resume(){
+        Time.timeScale = 1;
+        PausePanel.SetActive(false);
     }
 
     

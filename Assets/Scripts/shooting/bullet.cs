@@ -31,24 +31,23 @@ public class bullet : MonoBehaviour
             if(healthSystem!=null){
                 healthSystem.TakeDamage(damage);
             }
+            Instantiate(BulletHitPs,transform.position,Quaternion.identity);
             Destroy(gameObject);
+            
         }
         else if((other.CompareTag("enemy") && damagesEnemy)){
             HealthSystem healthSystem = other.GetComponent<HealthSystem>();
             if(healthSystem!=null){
                 healthSystem.TakeDamage(damage);
             }
+            Instantiate(BulletHitPs,transform.position,Quaternion.identity);
             Destroy(gameObject);
         }
         else if(other.CompareTag("wall")){
+            Instantiate(BulletHitPs,transform.position,Quaternion.identity);
             Destroy(gameObject);
         }
         
     }
 
-    
-    void OnDestroy()
-    {
-        Instantiate(BulletHitPs,transform.position,Quaternion.identity);
-    }
 }

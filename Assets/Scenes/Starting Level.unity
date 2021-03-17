@@ -525,10 +525,13 @@ MonoBehaviour:
 
     mouse aim and click to shoot
 
-    R to reload.
+    R / right click to
+    reload.
 
-    Go
-    to the blue teleporter to move to next level.'
+    shift/space to dodge roll
+
+    Go to the blue teleporter to move
+    to next level.'
 --- !u!222 &1236327512
 CanvasRenderer:
   m_ObjectHideFlags: 0
