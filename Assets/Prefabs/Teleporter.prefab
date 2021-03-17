@@ -112,3 +112,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bcddfc3851088545b045a3187310422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TeleportPS: {fileID: 1842756941594829037, guid: 502f7b06b5053b64d890bda74dee2613,
+    type: 3}

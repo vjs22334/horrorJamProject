@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class TelePorter : MonoBehaviour
 {
+    public GameObject TeleportPS;
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player")){
-            FindObjectOfType<Level>().MoveToNextLevel();
+            Instantiate(TeleportPS,transform.position,Quaternion.identity);
+            Invoke(nameof(MoveToNextLevel),0.75f);
         }
+    }
+
+    void MoveToNextLevel(){
+        FindObjectOfType<Level>().MoveToNextLevel();
     }
 }

@@ -12,6 +12,8 @@ public class bullet : MonoBehaviour
     public bool damagesPlayer = false;
     public bool damagesEnemy = false;
 
+    public GameObject BulletHitPs;
+
     void Start()
     {
         Destroy(gameObject,lifeTime);        
@@ -42,5 +44,11 @@ public class bullet : MonoBehaviour
             Destroy(gameObject);
         }
         
+    }
+
+    
+    void OnDestroy()
+    {
+        Instantiate(BulletHitPs,transform.position,Quaternion.identity);
     }
 }

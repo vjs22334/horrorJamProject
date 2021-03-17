@@ -118,6 +118,8 @@ MonoBehaviour:
   damage: 20
   damagesPlayer: 0
   damagesEnemy: 1
+  BulletHitPs: {fileID: 2254463963399430813, guid: 02e09cff122e4184cb39fdfd4bdaed9b,
+    type: 3}
 --- !u!50 &-1047562219905983647
 Rigidbody2D:
   serializedVersion: 4

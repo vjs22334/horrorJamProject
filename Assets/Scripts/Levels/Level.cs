@@ -15,18 +15,31 @@ public class Level : MonoBehaviour
     int enemiesCount = 0;
     
     public void Initialize(GameObject playerGO){
-        playerGO.transform.position = PlayerSpawnPos.position;
-        camera.LookAt = playerGO.transform;
-        camera.Follow = playerGO.transform;
-        playerGO.SetActive(true);
         Player = playerGO;
+        Player.transform.position = PlayerSpawnPos.position;
+        camera.LookAt = Player.transform;
+        camera.Follow = Player.transform;
+        Instantiate(LevelManager.Instance.PlayerSpawnPs,PlayerSpawnPos.position,Quaternion.identity);
+        Invoke(nameof(ActivatePlayer),0.6f);
 
         foreach (Enemy enemy in FindObjectsOfType<Enemy>())
         {
-            enemy.Initialize(playerGO.transform);
+            enemy.Initialize(Player.transform);
             enemiesCount++;
         }
+        if(enemiesCount > 0){
+            AudioManager.Instance.PlayBattleMusic();
+        }
+        else{
+            AudioManager.Instance.PlayAmbienceMusic();
+        }
 
+
+
+    }
+
+    void ActivatePlayer(){
+        Player.SetActive(true);
     }
 
     public void MoveToNextLevel(){
@@ -49,6 +62,7 @@ public class Level : MonoBehaviour
         enemiesCount--;
         if(enemiesCount <= 0){
             Teleporter.SetActive(true);
+            AudioManager.Instance.PlayAmbienceMusic();
         }
     }
 }

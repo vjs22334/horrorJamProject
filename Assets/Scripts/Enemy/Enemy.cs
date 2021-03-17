@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
     public LayerMask lineOfSightLayerMask;
     public float lineOfSightLength;
 
+    public GameObject DeathPs;
+
     [Header("references")]
     public Transform Target;
     public NavMeshAgent navMeshAgent;
@@ -91,9 +93,11 @@ public class Enemy : MonoBehaviour
     public virtual void Initialize(Transform playerTransform){
         Target = playerTransform;
     }
+    
    
     void OnDestroy()
     {
+        Instantiate(DeathPs,transform.position,Quaternion.identity);
         if(OnEnemyKilled!=null)
             OnEnemyKilled();
     }

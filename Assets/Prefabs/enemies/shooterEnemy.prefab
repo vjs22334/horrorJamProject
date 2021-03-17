@@ -484,6 +484,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1025
   lineOfSightLength: 1000
+  DeathPs: {fileID: 1005771011127004383, guid: 5abb127128ecc7540a1ea44e627dec14, type: 3}
   Target: {fileID: 0}
   navMeshAgent: {fileID: 1713877031959795604}
   SpriteTransform: {fileID: 1713877030567027901}

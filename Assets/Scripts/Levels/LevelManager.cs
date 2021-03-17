@@ -20,6 +20,8 @@ public class LevelManager : MonoBehaviour
     string CurrLoadedLevel;
     string levelToLoad;
 
+    public GameObject PlayerSpawnPs;
+
 
     private static LevelManager _instance = null;
     public static LevelManager Instance{
