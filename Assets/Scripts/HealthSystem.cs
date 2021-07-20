@@ -46,4 +46,9 @@ public class HealthSystem : MonoBehaviour
     void ResetSpriteColor(){
         sprite.color = Color.white;
     }
+
+    public virtual int GetCurrentHealth()
+    {
+        return health;
+    }
 }

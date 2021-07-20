@@ -17,5 +17,4 @@ public class EnemyHealthSystem : HealthSystem
         GetComponent<Enemy>().EnemyKilled();
         base.Death();
     }
-
 }
