@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be83c976321941d4f8639ff5501b9821, type: 3}
+  m_Name: GolemPhase3
+  m_EditorClassIdentifier: 
+  phaseAttacks:
+  - {fileID: 11400000, guid: eb9cf80e9b1b27f41914d6717b652dcd, type: 2}
+  nextPhase: {fileID: 0}
+  phaseChangePercent: 0

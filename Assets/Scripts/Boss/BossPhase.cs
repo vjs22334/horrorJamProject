@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
+[System.Serializable, CreateAssetMenu]
 public class BossPhase : ScriptableObject
 {
     public List<BossAttack> phaseAttacks;
@@ -22,6 +22,9 @@ public class BossPhase : ScriptableObject
 
     public void OnEnd()
     {
-
+        if (phaseChangePercent < 0)
+        {
+            Debug.Log("Boss ded!");
+        }
     }
 }

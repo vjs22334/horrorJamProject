@@ -122,16 +122,16 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1025
   lineOfSightLength: 100
+  DeathPs: {fileID: 0}
   Target: {fileID: 0}
   navMeshAgent: {fileID: 1021779652858276261}
   SpriteTransform: {fileID: 1021779653258635918}
-  bossAttacks:
-  - {fileID: 11400000, guid: eb9cf80e9b1b27f41914d6717b652dcd, type: 2}
-  - {fileID: 11400000, guid: a3cebd7c1fdcfcb44a5648145b61b657, type: 2}
-  - {fileID: 11400000, guid: 4c5b6acf92b319d4fb3ce44648e87ae0, type: 2}
+  bossAttacks: []
   gun: {fileID: 6408370464689370118}
   animator: {fileID: 1021779652858276267}
   laser: {fileID: 6408370465853609685}
+  currPhase: {fileID: 11400000, guid: 8710c21adfc37a14eb3f63f2e9019928, type: 2}
+  bossHealthSystem: {fileID: 1021779652858276265}
 --- !u!95 &1021779652858276267
 Animator:
   serializedVersion: 3
@@ -197,6 +197,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -315,6 +316,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &6103763240536528448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,6 +394,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.030037642, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -467,6 +470,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -578,6 +582,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

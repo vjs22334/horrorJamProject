@@ -19,7 +19,7 @@ public class BossEnemy : Enemy
     public GameObject laser;
 
     //current phase of boss
-    BossPhase currPhase;
+    public BossPhase currPhase;
 
     //assigned in inspector
     public BossHealthSystem bossHealthSystem;
@@ -59,6 +59,7 @@ public class BossEnemy : Enemy
 
     public void Initialize()
     {
+        currPhase.OnEnter(this);
         ChooseAttack();
         initialized = true;
     }
