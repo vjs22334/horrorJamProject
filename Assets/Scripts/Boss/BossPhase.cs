@@ -10,6 +10,7 @@ public class BossPhase : ScriptableObject
 
     public BossPhase nextPhase;
 
+    [Range(0, 100)]
     public int phaseChangePercent;
 
     public void OnEnter(BossEnemy boss)

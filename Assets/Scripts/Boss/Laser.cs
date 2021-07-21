@@ -40,6 +40,9 @@ public class Laser : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+
+        transform.position = new Vector3(Vector3.zero.x, transform.position.y, transform.position.z);
+
         RaycastHit2D raycast = Physics2D.Raycast(laserStartPoint.position,laserStartPoint.right,laserRaycastDistance,laserLayermask);
         if(raycast){
             float laserLength = (raycast.point-(Vector2)laserStartPoint.position).magnitude;
