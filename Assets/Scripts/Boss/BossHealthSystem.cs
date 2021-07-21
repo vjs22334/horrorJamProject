@@ -12,7 +12,10 @@ public class BossHealthSystem : EnemyHealthSystem
     {
         GetComponent<Animator>().SetTrigger("Die");
         GetComponent<BoxCollider2D>().enabled = false;
-        GetComponent<BossEnemy>().laser.SetActive(false);
+
+        //deactivate all weapons in boss
+        GetComponent<BossEnemy>().ActivateWeapons(false);
+
         GetComponent<BossEnemy>().enabled = false;
     }
 

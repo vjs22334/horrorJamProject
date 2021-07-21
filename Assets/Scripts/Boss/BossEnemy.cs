@@ -16,7 +16,7 @@ public class BossEnemy : Enemy
     public Gun gun;
     public Animator animator;
 
-    public GameObject laser;
+    public GameObject[] weapons;
 
     //current phase of boss
     public BossPhase currPhase;
@@ -54,6 +54,26 @@ public class BossEnemy : Enemy
         if (currentBosshealth <= bossHealthSystem.MaxHealth * currPhase.phaseChangePercent / 100)
         {
             ChoosePhase();
+        }
+    }
+
+    public GameObject SearchForWeapon(string weaponName)
+    {
+        foreach (GameObject weapon in weapons)
+        {
+            if (weapon.name == weaponName)
+            {
+                return weapon;
+            }
+        }
+        return null;
+    }
+
+    public void ActivateWeapons(bool b)
+    {
+        foreach (GameObject weapon in weapons)
+        {
+            weapon.SetActive(b);
         }
     }
 
@@ -129,10 +149,10 @@ public class BossEnemy : Enemy
         currAttack.Tick(vectorToTarget);
     }
 
-    public void LaserAttack()
-    {
-        laser.GetComponent<Laser>().LaserFire();
-    }
+    //public void LaserAttack()
+    //{
+    //    laser.GetComponent<Laser>().LaserFire();
+    //}
 
     public void AnimationEventTrigger(string eventType)
     {

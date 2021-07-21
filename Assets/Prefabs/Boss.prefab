@@ -129,7 +129,8 @@ MonoBehaviour:
   bossAttacks: []
   gun: {fileID: 6408370464689370118}
   animator: {fileID: 1021779652858276267}
-  laser: {fileID: 6408370465853609685}
+  weapons:
+  - {fileID: 6408370465853609685}
   currPhase: {fileID: 11400000, guid: 8710c21adfc37a14eb3f63f2e9019928, type: 2}
   bossHealthSystem: {fileID: 1021779652858276265}
 --- !u!95 &1021779652858276267

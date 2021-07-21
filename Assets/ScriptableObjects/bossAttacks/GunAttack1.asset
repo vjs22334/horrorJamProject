@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boss: {fileID: 0}
   minPlayerRange: 0
-  MaxPlayerRange: 100
+  MaxPlayerRange: 60
   followPlayer: 1
   stoppingDistance: 8
   gun: {fileID: 0}
