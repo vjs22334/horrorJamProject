@@ -9,7 +9,7 @@ public class LaserAttack : BossAttack
     public float sweepSpeed;
     float currAngle;
     GameObject laserWeapon;
-    Laser laser;
+    public Laser laser;
 
     public override void OnEnter()
     {        

@@ -9,13 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f207245181f0fd34e9a39ee74eeb6608, type: 3}
-  m_Name: LaserFollow 1
+  m_Script: {fileID: 11500000, guid: 0b4e871429f8e9b4caf1a73098567266, type: 3}
+  m_Name: LaserFollow
   m_EditorClassIdentifier: 
   boss: {fileID: 0}
   minPlayerRange: 0
   MaxPlayerRange: 100
-  followPlayer: 1
+  followPlayer: 0
   stoppingDistance: 0
-  sweepAngle: 0
-  sweepSpeed: 0
+  sweepAngle: 360
+  sweepSpeed: 130
+  laser: {fileID: 0}
+  counterLength: 100
+  durationFactor: 1000
