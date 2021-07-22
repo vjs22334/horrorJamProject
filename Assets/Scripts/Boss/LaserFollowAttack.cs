@@ -5,12 +5,14 @@ using UnityEngine;
 [CreateAssetMenu]
 public class LaserFollowAttack : LaserAttack
 {
-    public int counterLength;
+    public float counterLength;
+
+    public float minRotSpeed = 0.5f;
 
     //[Tooltip("How short each increment of the counter should be")]
     //public int durationFactor;
 
-    int counter;
+    float counter;
     GameObject laserWeapon;
     float currAngle;
 
@@ -40,32 +42,32 @@ public class LaserFollowAttack : LaserAttack
         {
             return;
         }
+        
 
         if (counter <= 0)
         {
             boss.ChooseAttack();
         }
         else
-        {
+        {        
             //check angle between player and laser origin
-            currAngle = Vector3.Angle(vectorToTarget, laserWeapon.transform.position);
-
             //based on angle sign change laser dir
-            if (currAngle > 0)
+            if (Vector3.SignedAngle(vectorToTarget, laserWeapon.transform.right, -Vector3.forward) > 0)
             {
-                //right side            
-                laserWeapon.transform.rotation = Quaternion.AngleAxis(-currAngle, Vector3.up);
+                //right side
+                currAngle += Mathf.Clamp(Vector3.Angle(vectorToTarget, laserWeapon.transform.right) * Time.deltaTime * sweepSpeed, minRotSpeed, float.MaxValue);
             }
             else
             {
                 //left side
-                laserWeapon.transform.rotation = Quaternion.AngleAxis(currAngle, Vector3.up);
+                currAngle -= Mathf.Clamp(Vector3.Angle(vectorToTarget, laserWeapon.transform.right) * Time.deltaTime * sweepSpeed, minRotSpeed, float.MaxValue);
             }
 
+            laserWeapon.transform.localEulerAngles = new Vector3(0, 0, currAngle);
 
             //simultaneously adjust laser length to match recent player postion, may use polymorphed update of Laser script
 
-            counter -= counterLength / 100;
+            counter -= Time.deltaTime;
         }
     }
 

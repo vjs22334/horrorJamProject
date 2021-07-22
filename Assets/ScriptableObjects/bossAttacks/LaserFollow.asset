@@ -18,7 +18,7 @@ MonoBehaviour:
   followPlayer: 0
   stoppingDistance: 0
   sweepAngle: 360
-  sweepSpeed: 130
+  sweepSpeed: 0.75
   laser: {fileID: 0}
-  counterLength: 100
-  durationFactor: 1000
+  counterLength: 10
+  minRotSpeed: 0.25
