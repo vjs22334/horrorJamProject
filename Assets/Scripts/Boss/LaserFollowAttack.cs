@@ -31,6 +31,7 @@ public class LaserFollowAttack : LaserAttack
         laser = laserWeapon.GetComponent<Laser>();
 
         laserWeapon.SetActive(true);
+
         currAngle = -sweepAngle / 2;
         laserWeapon.transform.localEulerAngles = new Vector3(0, 0, currAngle);
         AudioManager.Instance.PlayOneShot(AudioManager.Instance.BossLaserClip);

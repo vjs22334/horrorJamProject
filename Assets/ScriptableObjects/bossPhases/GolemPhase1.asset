@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: GolemPhase1
   m_EditorClassIdentifier: 
   phaseAttacks:
-  - {fileID: 11400000, guid: 47900f25e52213343953af1ae09020a3, type: 2}
+  - {fileID: 11400000, guid: eb9cf80e9b1b27f41914d6717b652dcd, type: 2}
   nextPhase: {fileID: 11400000, guid: 1d1b5ca53798e5d4cae9571e2a28d258, type: 2}
   phaseChangePercent: 66
+  hasPhaseChangeAttack: 1
+  phaseChangeAttack: {fileID: 11400000, guid: 47900f25e52213343953af1ae09020a3, type: 2}

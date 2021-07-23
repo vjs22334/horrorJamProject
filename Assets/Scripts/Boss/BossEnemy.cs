@@ -88,7 +88,15 @@ public class BossEnemy : Enemy
     {
         if (currPhase.nextPhase != null)
         {
-            currPhase.OnEnd();
+            if (currPhase.hasPhaseChangeAttack)
+            {
+                //do phaseChangeAttack here
+                //preferably call its own on end inside its own on enter method
+            }
+            else
+            {
+                currPhase.OnEnd();
+            }
 
             //is there some list based better alt for this?
             currPhase = currPhase.nextPhase;

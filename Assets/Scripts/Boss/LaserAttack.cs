@@ -25,6 +25,7 @@ public class LaserAttack : BossAttack
         laser = laserWeapon.GetComponent<Laser>();
 
         laserWeapon.SetActive(true);
+
         currAngle = -sweepAngle/2;
         laserWeapon.transform.localEulerAngles = new Vector3(0,0,currAngle);
         AudioManager.Instance.PlayOneShot(AudioManager.Instance.BossLaserClip);
@@ -42,6 +43,7 @@ public class LaserAttack : BossAttack
 
     public override void OnExit(){
         boss.animator.SetTrigger("idle");
+        
         laserWeapon.SetActive(false);
 
         //unsub to bossEnemy's action

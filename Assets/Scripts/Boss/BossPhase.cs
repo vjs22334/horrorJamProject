@@ -13,6 +13,10 @@ public class BossPhase : ScriptableObject
     [Range(0, 100)]
     public int phaseChangePercent;
 
+    public bool hasPhaseChangeAttack;
+
+    public BossAttack phaseChangeAttack;
+
     public void OnEnter(BossEnemy boss)
     {
         foreach (BossAttack attack in phaseAttacks)

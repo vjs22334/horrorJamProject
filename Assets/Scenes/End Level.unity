@@ -5548,5 +5548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 6408370465853609675, guid: 779382a7670d0544b952a41a7708635d,
+        type: 3}
+      propertyPath: followPlayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 779382a7670d0544b952a41a7708635d, type: 3}
