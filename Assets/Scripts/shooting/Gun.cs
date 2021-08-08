@@ -11,6 +11,7 @@ public class Gun : MonoBehaviour
 
     [Header("gun data")]
     [Tooltip("time between shots in seconds")]
+    public bool bullet_randomness=true;
     public float fireRate = 1f;
     public int clipSize = 5;
     public float reloadTime = 2f;
@@ -70,7 +71,7 @@ public class Gun : MonoBehaviour
             for (int i = 0; i < shotPattern.spreadAngles.Length; i++)
             {
                 //TODO: Pool this
-                float angleRandomness = UnityEngine.Random.Range(-shotPattern.angleRandomness,shotPattern.angleRandomness);
+                float angleRandomness = bullet_randomness? UnityEngine.Random.Range(-shotPattern.angleRandomness,shotPattern.angleRandomness):1f;
                 GameObject bulletGo = Instantiate(shotPattern.bulletPrefab,muzzleTransform.position+(Vector3)shotPattern.positionOffsets[i],Quaternion.Euler(0,0,shotPattern.spreadAngles[i]+angleRandomness)*muzzleTransform.rotation);
                 AudioManager.Instance.PlayOneShot(AudioManager.Instance.GunFireClip);
             }

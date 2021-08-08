@@ -14,6 +14,7 @@ public class BossEnemy : Enemy
     public List<BossAttack> bossAttacks;
 
     public Gun gun;
+    public Gun launcher;
     public Animator animator;
 
     public GameObject[] weapons;
