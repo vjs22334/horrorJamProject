@@ -23,6 +23,11 @@ public class BossPhase : ScriptableObject
         {
             attack.boss = boss;
         }
+
+        if (phaseChangeAttack != null)
+        {
+            phaseChangeAttack.boss = boss;
+        }
     }
 
     public void OnEnd()

@@ -1355,7 +1355,9 @@ MonoBehaviour:
   startingScene: Starting Level
   endingScene: End Level
   Levels:
-  - End Level
+  - Level_1
+  - Level_3
+  - Level_4
   GameOverPanel: {fileID: 1145435492}
   PausePanel: {fileID: 456828282}
   playerGO: {fileID: 325793728}

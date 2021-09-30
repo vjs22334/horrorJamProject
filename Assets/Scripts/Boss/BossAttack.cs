@@ -7,7 +7,10 @@ public class BossAttack : ScriptableObject
 {
     [HideInInspector]
     public BossEnemy boss;
-    public virtual void OnEnter(){}
+    public virtual void OnEnter()
+    {
+        boss.animator.ResetTrigger("idle");
+    }
 
     public virtual void OnExit(){}
 

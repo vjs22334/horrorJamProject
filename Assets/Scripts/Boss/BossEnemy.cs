@@ -13,6 +13,7 @@ public class BossEnemy : Enemy
 
     public List<BossAttack> bossAttacks;
 
+    //TODO: put launcher into the weapons array and make it work from there
     public Gun gun;
     public Gun launcher;
     public Animator animator;
@@ -24,6 +25,8 @@ public class BossEnemy : Enemy
 
     //assigned in inspector
     public BossHealthSystem bossHealthSystem;
+
+    bool isCurrentPhaseOver = false;
 
     BossAttack currAttack;
 
@@ -54,7 +57,8 @@ public class BossEnemy : Enemy
         //if boss's health is <= phaseChangePercent% of maxHealth
         if (currentBosshealth <= bossHealthSystem.MaxHealth * currPhase.phaseChangePercent / 100)
         {
-            ChoosePhase();
+            //ChoosePhase();
+            isCurrentPhaseOver = true;
         }
     }
 
@@ -91,8 +95,9 @@ public class BossEnemy : Enemy
         {
             if (currPhase.hasPhaseChangeAttack)
             {
-                //do phaseChangeAttack here
-                //preferably call its own on end inside its own on enter method
+                currAttack.OnExit();
+                currAttack = currPhase.phaseChangeAttack;
+                currPhase.phaseChangeAttack.OnEnter();
             }
             else
             {
@@ -154,6 +159,12 @@ public class BossEnemy : Enemy
         }
         
         enemyUpdate();
+
+        if (isCurrentPhaseOver)
+        {
+            ChoosePhase();
+            isCurrentPhaseOver = false;
+        }
 
         currAttack.Tick(vectorToTarget);
     }

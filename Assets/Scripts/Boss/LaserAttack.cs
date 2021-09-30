@@ -18,6 +18,8 @@ public class LaserAttack : BossAttack
 
         boss.animator.SetTrigger("Laserattack");
 
+        Debug.Break();
+
         //search for laser in boss's weapons array
         laserWeapon = boss.SearchForWeapon("Laser");
 
